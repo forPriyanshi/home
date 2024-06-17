@@ -26,7 +26,7 @@
     <h3 id="last">(PLEASE SAY YES)</h3>
   </div>
   <script>
-	  document.querySelector("#last").style.display = 'none';
+	  document.querySelector("#last").style.visibility = 'hidden';
 	  const changeText = document.querySelector("#change");
 	  let text = ["Did You Know?", "This Guy","wants to take", "This Girl", "out on a DATE!", "What do you say?"]
 	  let i = 0;
@@ -36,7 +36,7 @@
 		  i += 1;
 	  }
 	  if (i==6){
-		  document.querySelector("#last").style.display = 'initial';
+		  document.querySelector("#last").style.visibility = 'visible';
 	  }
   </script>
   </body>
