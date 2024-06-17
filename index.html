@@ -45,21 +45,21 @@
 		<img id="img2" src="./IMG_7118.jpeg" width="174" height="219">
 	  </div>
   </div>
- <audio controls="controls" autoplay>
-  	<source src="./music.mp3" type="audio/mp3">
- </audio>
+  <audio id="music" src="./music.mp3"></audio>
   <script>
 	  var img1 = document.getElementById('img1');
 	  var img2 = document.getElementById('img2');
 	  var last = document.getElementById('last');
+	  var music = document.getElementById("music");
 	  img1.style.visibility = 'hidden';
 	  img2.style.visibility = 'hidden';
 	  last.style.display = 'none';
 	  const changeText = document.querySelector("#change");
 	  let text = ["Did You Know?", "This Guy","wants to take", "This Girl", "out on a DATE!", "What do you say?"]
 	  let i = 0;
-	  changeText.addEventListener("click", newText);
-	  function newText() {
+	  changeText.addEventListener("click", onClick);
+	  function onClick() {
+		  audio.play();
 		  changeText.textContent = text[i];
 		  i += 1;
 		  if (i == 2){
