@@ -35,9 +35,11 @@
 	  function newText() {
 		  changeText.textContent = text[i];
 		  i += 1;
-	  }
-	  if (i > 5){
-		  last.style.display = 'block';
+		  if (i == 6){
+			  last.style.display = 'block';
+		  } else {
+			  continue;
+		  }
 	  }
   </script>
   </body>
