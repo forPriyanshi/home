@@ -12,7 +12,7 @@
     }
     p {
       color: red;
-      font-size: 120px;
+      font-size: 80px;
       font-family: courier;
     }
     h3 {
@@ -23,9 +23,10 @@
   <body>
   <div>
     <p id="change">Click Me!</p>
-    <h3>(PLEASE SAY YES)</h3>
+    <h3 id="last">(PLEASE SAY YES)</h3>
   </div>
   <script>
+	  document.querySelector("#last").style.display = 'none';
 	  const changeText = document.querySelector("#change");
 	  let text = ["Did You Know?", "This Guy","wants to take", "This Girl", "out on a DATE!", "What do you say?"]
 	  let i = 0;
@@ -33,6 +34,9 @@
 	  function newText() {
 		  changeText.textContent = text[i];
 		  i += 1;
+	  }
+	  if (i==6){
+		  document.querySelector("#last").style.display = 'initial';
 	  }
   </script>
   </body>
