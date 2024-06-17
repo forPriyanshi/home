@@ -19,7 +19,8 @@
 	color: red;
     	font-size: 50%;
     img {
-	padding: 30
+	padding: 20
+	visibility: hidden;
     }
   </style>
   </head>
@@ -44,6 +45,12 @@
 		  i += 1;
 		  if (i == 6){
 			  last.style.display = 'block';
+		  }
+		  if (i == 2){
+			  document.getElementById('img1').style.visibility = "visible";
+		  }
+		  if (i == 4){
+			  document.getElementById('img2').style.visibility = "visible";
 		  }
 	  }
   </script>
