@@ -11,7 +11,7 @@
 	  text-align: center;
     }
     p {
-      color: green;
+      color: red;
       font-size: 80px;
       font-family: courier;
     }
@@ -20,7 +20,6 @@
     	font-size: 50%;
     img {
 	padding: 20
-	display: none;
     }
   </style>
   </head>
@@ -35,6 +34,8 @@
   </div>
   <script>
 	  var last = document.getElementById('last');
+	  var img1 = document.getElementById('img1');
+	  var img2 = document.getElementById('img2');
 	  last.style.display = 'none';
 	  const changeText = document.querySelector("#change");
 	  let text = ["Did You Know?", "This Guy","wants to take", "This Girl", "out on a DATE!", "What do you say?"]
@@ -47,10 +48,10 @@
 			  last.style.display = 'block';
 		  }
 		  if (i == 2){
-			  document.getElementById('img1').style.display = 'block';
+			  img1.style.display = 'block';
 		  }
 		  if (i == 4){
-			  document.getElementById('img2').style.display = 'block';
+			  img2.style.display = 'block';
 		  }
 	  }
   </script>
