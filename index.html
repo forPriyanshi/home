@@ -38,9 +38,12 @@
   </div>
   <script>
 	  const changeText = document.querySelector("#change");
-	  changeText.addEventListener("click", function() {
-		  changeText.textContent = "Did You Know?";
-	  });
+	  let text = ["Did You Know?", "This Guy","wants to take", "This Girl", "out on a DATE!", "What do you say?"]
+	  for (let i = 0; i < 5; i++) {
+		  changeText.addEventListener("click", function() {
+		  changeText.textContent = text[i];
+		  });
+	  }
   </script>
   </body>
 </html>
