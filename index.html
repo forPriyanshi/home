@@ -11,7 +11,7 @@
 	  text-align: center;
     }
     p {
-      color: red;
+      color: green;
       font-size: 80px;
       font-family: courier;
     }
@@ -20,7 +20,7 @@
     	font-size: 50%;
     img {
 	padding: 20
-	visibility: hidden;
+	display: none;
     }
   </style>
   </head>
@@ -30,8 +30,8 @@
     <h3 id="last">(PLEASE SAY YES)</h3>
   </div>
   <div id="images">
-	  <img id="img1" src="./IMG_7124.jpeg" width="200" height="251.5">
-	  <img id="img2" src="./IMG_7118.jpeg" width="200" height="251.5">
+	  <img id="img1" src="./IMG_7124.jpeg" width="187" height="235.5">
+	  <img id="img2" src="./IMG_7118.jpeg" width="187" height="235.5">
   </div>
   <script>
 	  var last = document.getElementById('last');
@@ -47,10 +47,10 @@
 			  last.style.display = 'block';
 		  }
 		  if (i == 2){
-			  document.getElementById('img1').style.visibility = "visible";
+			  document.getElementById('img1').style.display = 'block';
 		  }
 		  if (i == 4){
-			  document.getElementById('img2').style.visibility = "visible";
+			  document.getElementById('img2').style.display = 'block';
 		  }
 	  }
   </script>
