@@ -26,6 +26,7 @@
   </head>
   <body>
   <div>
+    <p id="change">Click Me!</p>
     <h2>Did you know?</h2>
     <h1>This Guy</h1>
     <h2>wants to take</h2>
@@ -35,6 +36,11 @@
     <h1>What's your answer?</h1>
     <h3>(PLEASE SAY YES)</h3>
   </div>
-  <script src="index.js"></script>
+  <script>
+	  const changeText = document.querySelector("#change");
+	  changeText.addEventListener("click", function() {
+		  changeText.textContent = "Did You Know?";
+	  });
+  </script>
   </body>
 </html>
