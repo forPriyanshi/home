@@ -11,7 +11,7 @@
 	  text-align: center;
     }
     p {
-      color: red;
+      color: green;
       font-size: 80px;
       font-family: courier;
     }
@@ -21,9 +21,12 @@
     }
     .container {
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: center;
 	position: relative;
+    }
+    .container div {
+	border: 10px solid grey;
     }
   </style>
   </head>
@@ -41,12 +44,12 @@
 	  </div>
   </div>
   <script>
-	  var last = document.getElementById('last');
 	  var img1 = document.getElementById('img1');
 	  var img2 = document.getElementById('img2');
-	  last.style.display = 'none';
+	  var last = document.getElementById('last');
 	  img1.style.visibility = 'hidden';
 	  img2.style.visibility = 'hidden';
+	  last.style.display = 'none';
 	  const changeText = document.querySelector("#change");
 	  let text = ["Did You Know?", "This Guy","wants to take", "This Girl", "out on a DATE!", "What do you say?"]
 	  let i = 0;
@@ -54,14 +57,16 @@
 	  function newText() {
 		  changeText.textContent = text[i];
 		  i += 1;
-		  if (i == 6){
-			  last.style.display = 'block';
-		  }
 		  if (i == 2){
 			  img1.style.visibility = 'visible';
 		  }
 		  if (i == 4){
 			  img2.style.visibility = 'visible';
+		  }
+		  if (i == 6){
+			  last.style.display = 'block';
+			  img1.style.visibility = 'hidden';
+			  img2.style.visibility = 'hidden';
 		  }
 	  }
   </script>
