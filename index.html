@@ -14,12 +14,6 @@
       color: red;
       font-family: courier;
     }
-    h1 {
-      font-size: 300%;
-    }
-    h2 {
-      font-size: 160%;
-    }
     h3 {
     	font-size: 50%;
   </style>
@@ -27,22 +21,16 @@
   <body>
   <div>
     <p id="change">Click Me!</p>
-    <h2>Did you know?</h2>
-    <h1>This Guy</h1>
-    <h2>wants to take</h2>
-    <h1>This Girl</h1>
-    <h2>out on a</h2>
-    <h1>Date!</h1>
-    <h1>What's your answer?</h1>
     <h3>(PLEASE SAY YES)</h3>
   </div>
   <script>
 	  const changeText = document.querySelector("#change");
 	  let text = ["Did You Know?", "This Guy","wants to take", "This Girl", "out on a DATE!", "What do you say?"]
-	  for (let i = 0; i < 6; i++) {
-		  changeText.addEventListener("click", function() {
+	  let i = 0;
+	  changeText.addEventListener("click", newText);
+	  function newText() {
 		  changeText.textContent = text[i];
-		  });
+		  i += 1;
 	  }
   </script>
   </body>
