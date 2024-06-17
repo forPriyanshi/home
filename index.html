@@ -11,7 +11,7 @@
 	  text-align: center;
     }
     p {
-      color: red;
+      color: green;
       font-size: 80px;
       font-family: courier;
     }
@@ -26,7 +26,8 @@
     <h3 id="last">(PLEASE SAY YES)</h3>
   </div>
   <script>
-	  document.querySelector("#last").style.display = 'none';
+	  var last = document.getElementById('last');
+	  last.style.display = 'none';
 	  const changeText = document.querySelector("#change");
 	  let text = ["Did You Know?", "This Guy","wants to take", "This Girl", "out on a DATE!", "What do you say?"]
 	  let i = 0;
@@ -36,7 +37,7 @@
 		  i += 1;
 	  }
 	  if (i > 5){
-		  document.querySelector("#last").style.display = 'block';
+		  last.style.display = 'block';
 	  }
   </script>
   </body>
