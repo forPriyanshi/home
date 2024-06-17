@@ -11,17 +11,19 @@
 	  text-align: center;
     }
     p {
-      color: red;
+      color: green;
       font-size: 80px;
       font-family: courier;
     }
     h3 {
 	color: red;
     	font-size: 50%;
-    .flex-container {
+    }
+    .container {
 	display: flex;
-	gap: 10px;
-    	justify-content: center;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
     }
   </style>
   </head>
@@ -30,7 +32,7 @@
     <p id="change">Click Me!</p>
     <h3 id="last">(PLEASE SAY YES)</h3>
   </div>
-  <div class="flex-container">
+  <div class="container">
 	  <div>
 		<img id="img1" src="./IMG_7124.jpeg" width="40%" height="50%">
 	  </div>
