@@ -57,8 +57,8 @@
 	  const changeText = document.querySelector("#change");
 	  let text = ["Did You Know?", "This Guy","wants to take", "This Girl", "out on a DATE!", "What do you say?"]
 	  let i = 0;
-	  changeText.addEventListener("click", onClick);
-	  function onClick() {
+	  changeText.addEventListener("click", newText);
+	  function newText() {
 		  audio.play();
 		  changeText.textContent = text[i];
 		  i += 1;
