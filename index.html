@@ -11,7 +11,7 @@
 	  text-align: center;
     }
     p {
-      color: green;
+      color: red;
       font-size: 80px;
       font-family: courier;
     }
@@ -44,9 +44,9 @@
 	  var last = document.getElementById('last');
 	  var img1 = document.getElementById('img1');
 	  var img2 = document.getElementById('img2');
-	  img1.style.display = 'none';
-	  img2.style.display = 'none';
 	  last.style.display = 'none';
+	  img1.style.visibility = 'hidden';
+	  img2.style.visibility = 'hidden';
 	  const changeText = document.querySelector("#change");
 	  let text = ["Did You Know?", "This Guy","wants to take", "This Girl", "out on a DATE!", "What do you say?"]
 	  let i = 0;
@@ -58,10 +58,10 @@
 			  last.style.display = 'block';
 		  }
 		  if (i == 2){
-			  img1.style.display = 'block';
+			  img1.style.visibility = 'visible';
 		  }
 		  if (i == 4){
-			  img2.style.display = 'block';
+			  img2.style.visibility = 'visible';
 		  }
 	  }
   </script>
